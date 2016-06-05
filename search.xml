@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Hello, Blog!]]></title>
+      <url>http://yrsf.github.io/2016/05/20/Hello-Blog/</url>
+      <content type="html"><![CDATA[<hr>
+<a id="more"></a>
+<h2 id="要有博客-就有了博客"><a href="#要有博客-就有了博客" class="headerlink" title="要有博客,就有了博客!"></a>要有博客,就有了博客!</h2><p>软件是快速进化的领域.设计开发需要与时俱进</p>
+<ul>
+<li>洞悉行业发展趋势</li>
+<li>选择工具并不断改进</li>
+<li>掌握前沿和实用技术</li>
+</ul>
+<p>把伟大而终生的学习理想融入到生活中,于是要有博客,就有了博客!</p>
+<p>博客的内容包括,但不限于</p>
+<ul>
+<li>英文优秀文章的译文</li>
+<li>面向技术的文章转载</li>
+<li>原创技术理解和分析</li>
+</ul>
+<h2 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h2><p>使用<a href="https://hexo.io/zh-cn/" target="_blank" rel="external"><strong>Hexo</strong></a>.按照官方的介绍,Hexo是快速,简洁且高效的博客框架.最喜欢的特性</p>
+<ul>
+<li>支持Markdown,专注写作内容</li>
+<li>丰富的主题和插件,自由组合</li>
+</ul>
+<p>以下是简要安装过程:</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>具体安装过程,参考安装文档</p>
+<ul>
+<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external"><strong>安装</strong></a></li>
+<li><a href="https://hexo.io/zh-cn/docs/setup.html" target="_blank" rel="external"><strong>建站</strong></a></li>
+</ul>
+<p>注意事项</p>
+<blockquote>
+<p>“npm install hexo-cli -g” 命令添加参数no-optional,避免错误 <em>Error: Cannot find module ‘./build/default/DTraceProviderBindings’</em></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g --no-optional</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>所有‘npm install’ 命令添加参数registry使用淘宝镜像下载安装文件,解决网速或GW问题</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h3 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h3><h4 id="发布新文章"><a href="#发布新文章" class="headerlink" title="发布新文章"></a>发布新文章</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>更多关于<a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="external"><strong>写作</strong></a></p>
+<h4 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>更多关于<a href="https://hexo.io/zh-cn/docs/server.html" target="_blank" rel="external"><strong>服务器</strong></a></p>
+<h4 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>更多关于<a href="https://hexo.io/zh-cn/docs/generating.html" target="_blank" rel="external"><strong>生成器</strong></a></p>
+<h4 id="远程网站部署"><a href="#远程网站部署" class="headerlink" title="远程网站部署"></a>远程网站部署</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>更多关于<a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="external"><strong>部署</strong></a></p>
+<p>注意事项</p>
+<blockquote>
+<p>使用<a href="https://pages.github.com “Goto GitHub Pages”" target="_blank" rel="external"><strong>GitHub Pages</strong></a>部署前,需修改站点根目录配置文件_config.yml的Deployment设置</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repository:</span> https://github.com/yrsf/yrsf.github.io.git</span><br><span class="line"><span class="attr">  branch:</span> master</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>使用以下命令解决错误 <em>ERROR Deployer not found: git</em></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure>
+<h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h3><ul>
+<li>主题： <a href="https://theme-next.iissnan.com" title="Goto NexT" target="_blank" rel="external"><strong>NexT</strong></a></li>
+<li>主题配置： <a href="https://theme-next.iissnan.com/theme-settings.html#rss" target="_blank" rel="external"><strong>RSS</strong></a> <a href="https://theme-next.iissnan.com/theme-settings.html#tags-page" target="_blank" rel="external"><strong>标签页面</strong></a> <a href="https://theme-next.iissnan.com/theme-settings.html#categories-page" target="_blank" rel="external"><strong>分类页面</strong></a></li>
+<li>备选主题： <a href="https://github.com/ptsteadman/hexo-theme-corporate" title="Goto Corporate" target="_blank" rel="external"><strong>Corporate</strong></a></li>
+</ul>
+<h3 id="安装第三方服务"><a href="#安装第三方服务" class="headerlink" title="安装第三方服务"></a>安装第三方服务</h3><ul>
+<li>评论系统： <a href="https://theme-next.iissnan.com/third-party-services.html#duoshuo" target="_blank" rel="external"><strong>多说</strong></a></li>
+<li>内容分享： <a href="https://theme-next.iissnan.com/third-party-services.html#share-duoshuo" target="_blank" rel="external"><strong>多说</strong></a></li>
+<li>站内搜索： <a href="https://theme-next.iissnan.com/third-party-services.html#swiftype" target="_blank" rel="external"><strong>微搜索</strong></a></li>
+<li>数据统计与分析： <a href="https://zhuweisheng.com.cn/technology/leancloud-counter/" target="_blank" rel="external"><strong>LeanCloud</strong></a></li>
+<li>站点地图： <a href="http://www.arao.me/2015/hexo-next-theme-optimize-seo/" target="_blank" rel="external"><strong>sitemap</strong></a></li>
+</ul>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><ul>
+<li>获取这个博客的所有配置及资源文件,请访问GitHub工程<a href="https://github.com/yrsf/Hexo" target="_blank" rel="external"><strong>blog</strong></a></li>
+<li>如果您对这个博客的内容感兴趣,请点击<a href="/atom.xml"><strong>订阅rss</strong></a></li>
+<li>如果您对博文有任何疑问和建议,请参与评论</li>
+<li>如果您想与我取得联系,请致信<strong><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x68;&#x61;&#111;&#x7a;&#121;&#99;&#x40;&#x73;&#105;&#x6e;&#x61;&#x2e;&#99;&#111;&#x6d;">&#x68;&#x61;&#111;&#x7a;&#121;&#99;&#x40;&#x73;&#105;&#x6e;&#x61;&#x2e;&#99;&#111;&#x6d;</a></strong></li>
+</ul>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
